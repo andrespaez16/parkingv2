@@ -1,0 +1,6 @@
+<h1>lista</h1>
+<ul>
+<% @vehicles.each do |vehicle|%>
+<li> <%=vehicle.plate%> : <%=vehicle.rate.rate%>  <li>
+<%end%>
+</ul>

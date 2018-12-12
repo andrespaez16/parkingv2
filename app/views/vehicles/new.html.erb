@@ -1,0 +1,9 @@
+<%= form_for @vehicle, :html =>{:class => "form"}, remote: true do |f| %>
+    
+    <div class="form-group">
+    <%= f.label :plate%>:
+      <%= f.text_field :plate, class:"form-control" %>
+    </div>
+    <%= f.select :rate_id, options_for_select(@rates.map { |s| [s.type_vehicle, s.id] })%>
+    <%= f.submit class: "btn btn-primary" %>
+  <% end %>
