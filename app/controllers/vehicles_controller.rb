@@ -11,7 +11,6 @@ class VehiclesController < ApplicationController
      @vehicle=Vehicle.new 
     end
     def create
-        @rate = Rate.new(rate_params)
         @vehicle = Vehicle.new(vehicle_params)
         if @vehicle.save
           redirect_to "index"

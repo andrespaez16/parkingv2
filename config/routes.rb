@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
- 
+    root"vehicles#index"
   resources :rates
   resources :commings 
   resources :vehicles
