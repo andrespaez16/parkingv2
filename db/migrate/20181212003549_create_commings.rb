@@ -1,6 +1,6 @@
-class CreateArrives < ActiveRecord::Migration[5.2]
+class CreateCommings < ActiveRecord::Migration[5.2]
   def change
-    create_table :arrives do |t|
+    create_table :commings do |t|
       t.boolean :status
       t.references :vehicle, foreign_key: true
 
