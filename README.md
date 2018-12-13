@@ -1,11 +1,11 @@
 # README
 
 Esta es una aplicacion la cual tiene un la funcionalidad de crear tarifa, crear clase de vehiculo  a su vez hacerle ingreso a su placa y ya relaciondolo con su costo muestra los vehiculos con sus items ,muestra su ticket de salida con total de pagar y tiempo tracurrido e informcacion del vehiculo.
-* Ruby version
+* Ruby version:
 Para poder ejecutar la app se necesita los siguientes pasos:
 gem file ruby  version 2.5.3
 o si se genera conflicto retirar la version de ruby del gemfile para que  se adapte a tu version de ruby exixtente
-* System dependencies
+* System dependencies:
 Se requiere:
   gem 'bootstrap', '~> 4.1.3'
   gem 'jquery-rails'
@@ -17,7 +17,8 @@ Se requiere:
   Siguiente paso rails db:migrate para hacer la miraciones correspondiente de las tablas
 
   se prende el servidor rails s
-  donde  se aloja la app en el local:host3000 
+  donde  se aloja la app en el local:host3000
+  Funcionalidad:
   La aplicacion Consta de 2 formularios :
   1-formulario de creacion de tarifas debes tener cuidado ya que no esta controlado la creacion de vehiculos iguales debes asegurarte no no crear clase de vehiculos que ya existen si no te funciona sin recargar "bug" recarga la pagina y ya debe aparecer la clase de vehiculo en el siguiente formulario.
   2-El formulario de creacion de placas se debe ingresar el formato de  la placa si se trata de iengresar una existente el automaticamnte te l va mostrar en el inde de vehiculos no acepta formatos que no sean el correcto , selccionas el vehiculo y los creas,si no se relaciona en la tabla "bug" recarga la pagina de nuevo y ya debe aparecer.
