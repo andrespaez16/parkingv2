@@ -17,7 +17,7 @@ o si se genera conflicto retirar la version de ruby del gemfile para que  se ada
   Siguiente paso rails db:migrate para hacer la miraciones correspondiente de las tablas
   se prende el servidor rails s
   donde  se aloja la app en el local:host3000
-  *Funcion:
+  *Funcion:z
   La aplicacion Consta de 2 formularios :
   1-formulario de creacion de tarifas debes tener cuidado ya que no esta controlado la creacion de vehiculos iguales debes asegurarte no no crear clase de vehiculos que ya existen si no te funciona sin recargar "bug" recarga la pagina y ya debe aparecer la clase de vehiculo en el siguiente formulario.
   2-El formulario de creacion de placas se debe ingresar el formato de  la placa si se trata de iengresar una existente el automaticamnte te l va mostrar en el inde de vehiculos no acepta formatos que no sean el correcto , selccionas el vehiculo y los creas,si no se relaciona en la tabla "bug" recarga la pagina de nuevo y ya debe aparecer.  
