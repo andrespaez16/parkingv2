@@ -1,6 +1,6 @@
 # README
 
-Esta es una aplicacion la cual tiene un la funcionalidad de crear tarifa crear clase de vehiculo  a su vez hacerle ingreso a su placa y ya relaciondolo con su costo muestra los vehiculos con sus items ,muestra su ticket de salida con total de pagar y tiempo tracurrido e informcacion del vehiculo.
+Esta es una aplicacion la cual tiene un la funcionalidad de crear tarifa, crear clase de vehiculo  a su vez hacerle ingreso a su placa y ya relaciondolo con su costo muestra los vehiculos con sus items ,muestra su ticket de salida con total de pagar y tiempo tracurrido e informcacion del vehiculo.
 * Ruby version
 Para poder ejecutar la app se necesita los siguientes pasos:
 gem file ruby  version 2.5.3
