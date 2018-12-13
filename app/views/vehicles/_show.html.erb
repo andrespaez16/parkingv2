@@ -3,12 +3,17 @@
       <p>Plate of vehicle: <%=@vehicle.plate%></p>
     </h5>
     <p class="card-text">
-      <p>Time of arrive <%=@vehicle.created_at%></p>
-      <p>Time of arrive <%=@vehicle.updated_at%></p>
+      <p>Time of in: <%=@vehicle.created_at%></p>
+      <p>Time of current: <%=Time.now%></p>
       <p>Type of vehicle:<%=@vehicle.rate.type_vehicle%></p>
       <p>Rate for minute:<%=@vehicle.rate.rate%></p>
-      <p>Total for pay:</p>
-
+      <p>Commings in:<%@vehicle.commings.each do |comming|%>
+        <ul>
+        <li><%=comming.status%></li>
+        <ul>
+        <%end%>
+        </p>
+      <p>Total for pay:<%=((Time.now - @vehicle.created_at)/3600).to_i * @vehicle.rate.rate%></p>
      <%= link_to "comming", vehicle_commings_path(@vehicle, @vehicle.commings.new), method: :post%>
     </p>
   <div>

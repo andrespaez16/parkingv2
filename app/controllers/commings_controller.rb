@@ -1,7 +1,7 @@
 class CommingsController < ApplicationController
   def create
     @vehicle=Vehicle.find(params[:vehicle_id])
-    p @vehicle
+    @comming=@vehicle.commings.create()
   end
   private
   def cooming_params

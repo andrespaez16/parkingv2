@@ -1,4 +1,4 @@
-<tr>
+<tr id=car-<%=@vehicle.id %> >
 <td><%=@vehicle.id%></td>
 <td><%=link_to @vehicle.plate, vehicle_path(@vehicle), remote:true%></td>
 <td><%=@vehicle.rate.rate%></td>

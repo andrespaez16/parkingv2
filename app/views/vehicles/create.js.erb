@@ -1,2 +1,8 @@
-$(".vehicle-title").append('<%= j render "vehicle"%>')
-$('.card').html('<%= j render "show"%>')
+if ($("tr#car-<%= @vehicle.id %>").length === 0){
+
+    $(".vehicle-title").append('<%= j render "vehicle"%>')
+}
+else{
+
+    alert("Plate in")
+}
