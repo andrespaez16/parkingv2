@@ -3,4 +3,5 @@ class Vehicle < ApplicationRecord
   has_many :commings 
   validates :plate, format: { with: /[A-Z]{3}[0-9]{3}/}
   validates :plate,presence: true
+  validates :plate, uniqueness: true
 end

@@ -11,10 +11,7 @@ class VehiclesController < ApplicationController
      @vehicle=Vehicle.new 
     end
     def create
-        @vehicle = Vehicle.new(vehicle_params)
-        if @vehicle.save
-          redirect_to "index"
-           end
+      @vehicle=Vehicle.find_or_create_by(vehicle_params)
     end
 
     def show
